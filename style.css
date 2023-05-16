@@ -112,7 +112,7 @@ body {
 }
 
 h1 {
-   margin: 50px;
+  margin: 75px;
   font-weight: 900;
   font-size: 2.8em;
   letter-spacing: 5px;
@@ -149,20 +149,19 @@ h1 {
 }
 
 .order button {
-  margin: 100px 0;
+  margin: 75px 0;
   border: none;
   border-radius: 30px;
   padding: 15px;
   font-size: 1.2em;
   font-weight: 800;
   width: 180px;
-
   background-color: #ffcab8;
 }
 
 
 @media only screen and (max-width: 768px) {
-
+  
   .hamburger {
     display: block;
   }
