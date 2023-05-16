@@ -12,9 +12,14 @@
     ></script>
   </head>
   <body>
-    <section>
+    <header>
       <nav class="nav-bar">
-        <div class="center-nav">
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="center-nav" id="navbarMenu">
           <ul>
             <li>Home</li>
             <li>Order</li>
@@ -30,13 +35,8 @@
             <i class="fas fa-shopping-cart"></i>
           </a>
         </div>
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
       </nav>
-    </section>
+    </header>
 
     <div class="herosection">
       <div class="herosection-content">
@@ -75,5 +75,12 @@
     <div class="order">
       <button>Order</button>
     </div>
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("navbarMenu");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
