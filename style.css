@@ -21,7 +21,6 @@ body {
   z-index: 1;
 }
 
-/* Hamburger lines */
 .line {
   width: 25px;
   height: 3px;
@@ -30,7 +29,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Animate hamburger lines */
 .hamburger.active .line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -43,7 +41,6 @@ body {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Navigation bar */
 .nav-bar {
   padding: 4px;
   letter-spacing: 3px;
@@ -55,20 +52,18 @@ body {
   z-index: 2;
 }
 
-/* Left navigation items */
 .left-nav {
   display: flex;
   align-items: center;
   padding: 10px;
   font-size: 18px;
-  /*   font-weight: bold; */
+
 }
 
 .left-nav a {
   margin-right: 20px;
 }
 
-/* Center navigation items */
 .center-nav ul {
   list-style: none;
   display: flex;
@@ -83,7 +78,6 @@ body {
   font-size: 18px;
 }
 
-/* Font Awesome icons */
 .left-nav a i {
   margin-right: 5px;
   color: #000000;
@@ -162,23 +156,26 @@ h1 {
   font-size: 1.2em;
   font-weight: 800;
   width: 180px;
-  /* height: 60px; */
+
   background-color: #ffcab8;
 }
 
-/* Media queries for responsive design */
+
 @media only screen and (max-width: 768px) {
-  /* Show hamburger icon */
+
   .hamburger {
     display: block;
   }
 
-  /* Hide center navigation items */
+  .center-nav.active {
+    height: 50px;
+  }
+
   .center-nav ul {
     display: none;
   }
 
-  /* Show center navigation items when hamburger is active */
+
   .center-nav.active ul {
     display: flex;
     flex-direction: column;
@@ -193,13 +190,13 @@ h1 {
     z-index: 0;
   }
 
-  /* Animate center navigation items when hamburger is active */
+ 
   .center-nav.active ul li {
     opacity: 0;
     animation: fade-in 0.5s forwards;
   }
 
-  /* Animation */
+
   @keyframes fade-in {
     from {
       opacity: 0;
